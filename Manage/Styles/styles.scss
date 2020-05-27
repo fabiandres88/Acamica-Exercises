@@ -1,0 +1,42 @@
+body{
+    background-color: #010a24a2;
+    #headerPage{
+        display: flex;
+        justify-content: space-around;
+    }
+    #container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        form{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            width: 40%;
+            height: 300px;
+            margin-top: 80px;
+            background-color: #ffffffe8;
+            border-radius: 5px;
+            p{
+                text-align: center;
+            }
+            label{
+                margin-top: 20px;
+            }
+            #login{
+                margin-top: 20px;
+            }
+        }
+    }
+
+
+
+
+
+
+
+
+
+
+}
