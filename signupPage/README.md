@@ -1,3 +1,3 @@
-# Acamica-Exercises
+# Signup-Page
 
-All exercises made in the Acamica Scholarship classes.
+This exercise is about a build a simple sign up page.
