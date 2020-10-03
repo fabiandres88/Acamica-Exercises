@@ -1,12 +1,15 @@
 const fs = require('fs');
 const util = require('util');
 
-const readFile = (__filename, function cb1(error, data) {
-    fs.writeFile(__filename + '.copy', data, function cb2(error) {
-        //Nest more callbacks here...
-    });    
-});
+const readFile = util.promisify(fs.readFile);
+
+async function main() {
+    const data = await readFile(__filename);
+    console.log('File data is: ', data);
+}
+
+main();
 
 console.log('TEST');
 
-//This is an example of pyramid of doom
+//This is code return a promise and it is consumed using async await feature
