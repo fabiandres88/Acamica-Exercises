@@ -1,0 +1,45 @@
+body
+{
+    background-image: url(https://files.antena2.com.co/antena2/public/styles/imagen_despliegue/public/2019-01/millonarios_fox_2_0.jpg?itok=OTiPNyei);
+    background-size: cover;
+    height: auto;
+    width: 1400px;
+}
+h1
+{
+    color: rgb(236, 222, 30); font-size: 50px;
+    font-weight: bold;
+    width: 500px;
+    height: auto;
+    padding-left: 450px;
+    margin-top: 0px;
+}
+.mp4
+{
+    padding-top: 0px;
+    padding-right:0px;
+    padding-bottom: 0px;
+    padding-left:0px;
+    transform: translateX(430px)
+}
+.title
+{
+    color: rgb(255, 217, 47);
+    font-weight: bold;
+    width:400px;
+    font-size: 50px;
+    padding-top:300px; 
+    padding-right:450px;
+    padding-bottom:0px; 
+    padding-left:480px;
+}
+.return
+{
+    font-weight: bold;
+    color: rgb(17, 0, 255);
+    border: 1px solid goldenrod;
+    background-color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 20px;
+    
+}

@@ -1,0 +1,37 @@
+body{
+
+
+    background-color: aquamarine;
+}
+.one
+{
+    background-color: rgb(247, 243, 10);
+    height: 40vh;
+    width: 90vw;
+    color: rgb(17, 17, 17);
+    
+}
+.two
+{
+    background-color: rgb(10, 77, 233);
+    height: 30vh;
+    width: 90vw;
+    color: white;
+}
+.three
+{
+    background-color: rgba(245, 58, 11, 0.924);
+    height: 30vh;
+    width: 90vw;
+    color: white;
+}
+.oneone
+{
+    background-color: rgba(245, 58, 11, 0.924);
+    height: 20vh;
+    width: 20vw;
+    color: white;
+    position: absolute;
+    text-align: center;
+    
+}

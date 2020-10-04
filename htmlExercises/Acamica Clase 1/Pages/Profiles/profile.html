@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>MI primer Pagina Web</title>
+    <link rel="stylesheet" href="../../Styles/Profiles/profile.css">
+</head>
+<body>
+    <h1>Hi, my name is Fabian</h1>
+    <p id="pro">New profile page</p>
+    <div>
+<img src="../../Images/Profile/pp.jpg" height="800" width="1200" alt="up"></div>
+    <div><a href="./../../index.html">Index</a></div>
+    <script>
+        // Primer script
+        var parrafo = document.querySelector('p');
+        parrafo.style.cursor = 'pointer';
+        parrafo.addEventListener('mouseenter', function() {
+            parrafo.style.color = 'green';
+        });
+        parrafo.addEventListener('mouseleave', function() {
+            parrafo.style.color = 'pink';
+        });
+        parrafo.addEventListener('click', function(){
+            alert('Felicitaciones! Lograste crear tu primera WEB interactiva!');
+        });
+    </script>
+</body>
+</html>

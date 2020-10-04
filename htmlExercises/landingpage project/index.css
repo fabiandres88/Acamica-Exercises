@@ -1,0 +1,179 @@
+body {
+    
+    background:black;
+    background-repeat: repeat;
+    margin: 0px;
+    padding: 0px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 700px 1fr 1fr;
+    grid-template-rows: 300px 300px 300px 200px 100px;
+    grid-template-areas: "header header img" "content content menu" "content content menu" "footer1 footer1 icono" "footer2 footer2 footer2";
+    grid-gap: 10px;
+    border: 10px solid black;
+    margin: auto;
+}
+
+.container #header {
+    grid-column-start: header;
+    grid-column-end: header;
+    background-color: black;
+    text-align: left;
+    color: white;
+    width: 1127px;
+    height: 100px;
+    font-size: 50px;
+    font-family: 'Inconsolata', monospace;
+    animation-name: header;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+@keyframes header
+{
+    0%{
+        background-color: white;
+        color: black;
+        font-size: 80px;
+    }
+    
+    50%{
+        background-color: black;
+        color: white;
+        font-size: 20px;
+    }
+    100%{
+        background-color: white;
+        color: black;
+        font-size: 80px;
+    }
+}
+.container #img {
+    grid-column-start: img;
+    grid-column-end: img;
+    grid-row-start: img;
+    grid-row-end: img;
+    justify-self: center;
+    width: 100px;
+    height: 100px;
+    background-color: rgba(36, 36, 34, 0.993);
+    color: white;
+    font-size: 50px;
+    font-family: 'Inconsolata', monospace;
+}
+
+.container #content {
+    grid-column-start: content;
+    grid-column-end: content;
+    grid-row-start: content;
+    grid-row-end: content;
+    align-self: center;
+    justify-self: left;
+    background-color: transparent;
+    color: rgb(238, 237, 225);
+    font-size: 50px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+#perfil
+{
+    text-align: center;
+    font-family: 'Ma Shan Zheng', cursive;
+    font-size: 70px;
+    font-weight: bold;
+    
+
+}
+#perfil:hover
+{
+    color: gold;
+}
+
+.container #menu {
+    grid-column-start: menu;
+    grid-column-end: menu;
+    grid-row-start: menu;
+    grid-row-end: menu;
+    background-color:transparent ;
+    text-align: left;
+    color: white;
+    font-size: 50px;
+    font-family: 'Inconsolata', monospace;
+    
+}
+#menu ul li a
+{
+    text-decoration: none;
+    background-color: black;
+    display: block;
+    text-align: center;    
+    border-radius: 20%;
+    border-color: rgb(236, 232, 232);
+    border: 1px solid rgb(236, 232, 232);
+    width: 300px;
+    color: honeydew;
+    
+}
+#menu li {
+
+    list-style: none;
+        
+}
+#menu ul li a:hover
+{
+    background-color: white;
+    color: black;
+}
+
+.container #footer1 {
+    grid-column-start: footer1;
+    grid-column-end: footer1;
+    grid-row-start: footer1;
+    grid-row-end: footer1;
+    background-color: black;
+    text-align: justify;
+    color: white;
+    font-size: 30px;
+    font-family: 'Inconsolata', monospace;
+}
+#footer1 p{
+    text-align: center;
+    margin: 20px;
+}
+.container #icono {
+    grid-column-start: icono;
+    grid-column-end: icono;
+    grid-row-start: icono;
+    grid-row-end: icono;
+    color: white;
+    font-size: 30px;
+    font-family: 'Inconsolata', monospace;
+}
+
+.container #footer2 {
+    grid-column-start: footer2;
+    grid-column-end: footer2;
+    grid-row-start: footer2;
+    grid-row-end: footer2;
+    text-align: left;
+    color: white;
+    font-size: 50px;
+    font-family: 'Inconsolata', monospace;
+      
+}
+.menufoot
+{
+    position: relative;
+    padding-left: 500px;
+    transform: translateY(-30px);
+    list-style: none;
+}
+.menufoot li a
+{
+    display:block ;
+    float: left;
+    width: 150px;
+    height: 50px;
+    color: white;
+    text-decoration:  none;
+}

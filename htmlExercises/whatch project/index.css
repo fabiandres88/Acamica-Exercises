@@ -1,0 +1,85 @@
+#page {
+    padding-left: 350px;
+}
+
+.watch {
+    background-image: url("https://cssanimation.rocks/images/posts/clocks/ios_clock.svg");
+    background-repeat: no-repeat;
+    width: 500px;
+    height: 500px;
+    padding: 50px;
+}
+
+.needle {
+    position: absolute;
+    height: 500px;
+    width: 500px;
+    ;
+    color: red;
+    text-align: center;
+    font-size: 50px;
+    animation: tick-tock 60s steps(60, end) infinite;
+    z-index: 3;
+}
+
+@keyframes tick-tock {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+span {
+    background-color: red;
+    height: 290px;
+}
+
+.needle2 {
+    position: absolute;
+    height: 500px;
+    width: 500px;
+    ;
+    color: black;
+    text-align: center;
+    font-size: 50px;
+    animation: tick-tock2 3600s steps(60, end) infinite;
+    z-index: 2;
+}
+
+@keyframes tick-tock2 {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+#minute {
+    background-color: black;
+}
+
+.needle3 {
+    position: absolute;
+    height: 500px;
+    width: 500px;
+    ;
+    color: rgb(255, 197, 6);
+    text-align: center;
+    font-size: 50px;
+    animation: tick-tock2 43200s steps(60, end) infinite;
+    z-index: 1;
+}
+
+@keyframes tick-tock2 {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+#hour {
+    background-color: rgb(255, 197, 6);
+}
+
+.paw {
+    position: absolute;
+    height: 100px;
+    padding: 195px;
+    z-index: 4;
+}

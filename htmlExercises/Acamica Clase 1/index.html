@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width", initial-scale="1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>MI primer Pagina Web</title>
+    <link rel="stylesheet" href="./Styles/index.css">   
+</head>
+    <body>
+        <h1>Hello World</h1>
+        <p>This is my firts web page in the DWFS Acamica Carrer</p>
+                <div><a href="././/Pages/Profiles/profile.html" target="document">Profile</a></div>
+        <script>
+        // Primer script
+        var parrafo = document.querySelector('p');
+        parrafo.style.cursor = 'pointer';
+        parrafo.addEventListener('mouseenter', function() {
+            parrafo.style.color = 'green';
+        });
+        parrafo.addEventListener('mouseleave', function() {
+            parrafo.style.color = 'purple';
+        });
+        parrafo.addEventListener('click', function(){
+            alert('Felicitaciones! Lograste crear tu primera WEB interactiva!');
+        });
+    </script>
+</body>
+</html>
