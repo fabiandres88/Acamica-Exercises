@@ -17,3 +17,5 @@ solveRectangle(2,4);
 solveRectangle(3,4);
 solveRectangle(0,5);
 solveRectangle(-3,5);
+
+//This exercise is done without use module exports and require

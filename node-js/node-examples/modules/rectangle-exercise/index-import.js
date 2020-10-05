@@ -1,5 +1,5 @@
 //Importing rectangle module
-var rectangle = require ("./rectangle");
+var rectangle = require ("./rectangle-module");
 
 function solveRectangle (large,base) {
     console.log("Solving rectangle with large= " + large + ", and base= " + base);
