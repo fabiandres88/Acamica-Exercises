@@ -17,7 +17,7 @@ app.all('/dishes', (req, res, next) => {
 });
 
 app.get('/dishes', (req, res, next) => {
-    res.end('Will send all the ishes to you!');
+    res.end('Will send all the dishes to you!');
 });
 
 app.post('/dishes', (req, res, next) => {
@@ -32,6 +32,27 @@ app.put('/dishes', (req, res, next) => {
 
 app.delete('/dishes', (req, res, next) => {
     res.end('Deleting all the dishes!');
+});
+
+app.get('/dishes/:dishId', (req, res, next) => {
+    res.end('Will send details of the dish: '
+    + req.params.dishId + ' to you!');
+});
+
+app.post('/dishes/:dishId', (req, res, next) => {
+    res.statusCode = 403;
+    res.end('POST operationnot supported on /dishes/'
+    + req.params.dishId); 
+});
+
+app.put('/dishes/:dishId', (req, res, next) => {
+    res.write('Updating the dish: ' + req.params.dishId + '\n');
+    res.end('Will update the dish: '+ req.body.name +
+    ' with details: ' + req.body.description);
+});
+
+app.delete('/dishes/:dishId', (req, res, next) => {
+    res.end('Deleting dish: ' + req.params.dishId);
 });
 
 const server = http.createServer(app);
